@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Discover component should render with given initial state from Redux store 1`] = `null`;

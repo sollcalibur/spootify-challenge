@@ -1,7 +1,11 @@
-import React from 'react';
-import Discover from './Discover';
+import React, { Component } from 'react';
+import DiscoverContainer from './Discover';
 
-export default function Routes() {
-  // Here you'd return an array of routes
-  return <Discover />;
+export default class Routes extends Component {
+  
+  render() {
+    return (
+      <DiscoverContainer />
+    );
+  }
 }
