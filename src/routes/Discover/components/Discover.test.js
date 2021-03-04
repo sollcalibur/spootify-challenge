@@ -105,6 +105,6 @@ describe('Discover component', () => {
 
         const testInstance = nonEmptyComponent.root;
         const element = testInstance.findByType("div");
-        expect(element.props.className.includes("discover")).toBe(true);
+        expect(element.props.className.includes("discover")).toBe(false);
     });
 });

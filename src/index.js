@@ -11,6 +11,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import Login from './routes/Login/Login';
 import Routes from './routes/Discover';
+import Discover from './routes/Discover/components/Discover';
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
@@ -27,7 +28,8 @@ ReactDOM.render(
       <BrowserRouter>
         <Switch>
           <Route path="/" component={Login} exact={true} />
-          <Route path="/discover" component={Routes} />
+          <Route path="/login" component={Routes} />
+          <Route path="/discover" component={Discover} />
         </Switch>
       </BrowserRouter>
     </Provider>

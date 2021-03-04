@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
 import { Button, Container, Col, Row } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './login.css';
@@ -46,4 +45,3 @@ export default class Login extends Component {
     }
 }
 
-connect()(Login);

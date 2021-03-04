@@ -3,9 +3,6 @@ import React from 'react';
 import _ from 'lodash';
 import { getParamValues } from '../../utils';
 
-import CoreLayout from '../../common/layouts/CoreLayout';
-import Discover from './components/Discover';
-
 export default class DiscoverContainer extends React.Component {
     componentDidMount() {
         const { history, location } = this.props;
@@ -13,7 +10,7 @@ export default class DiscoverContainer extends React.Component {
             if (_.isEmpty(location.hash)) {
                 return history.push('/discover');
             }
-            
+
             const access_token = getParamValues(location.hash);
             const expiryTime = 0;
 
@@ -31,9 +28,7 @@ export default class DiscoverContainer extends React.Component {
 
     render() {
         return (
-            <CoreLayout>
-                <Discover></Discover>
-            </CoreLayout>
-        );
+            <></>
+        )
     }
 }
